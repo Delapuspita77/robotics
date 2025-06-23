@@ -56,5 +56,32 @@ Berdasarkan hasil deteksi dan peta kedalaman, robot menentukan aksi berdasarkan 
 
 ### 1. 📥 Clone Repositori
 ```bash
-git clone https://github.com/kyrozepto/robotic-firebot
-cd robotic-firebot
+git clone https://github.com/Delapuspita77/robotics.git
+cd robotics/firebot
+
+### 2. 🐍 Siapkan Virtual Environment
+```bash
+# Masuk ke folder python/
+cd python
+
+# Buat dan aktifkan virtual environment
+python -m venv venv
+
+# Aktifkan environment:
+venv\Scripts\activate    # ← Windows
+# atau
+source venv/bin/activate  # ← Linux/macOS
+
+# Install dependencies
+pip install -r requirements.txt
+
+### 3. 💾 Siapkan Model dan Firebase
+- Letakkan file model berikut ke dalam folder checkpoints/:
+  - yolov8n.pt → untuk deteksi rintangan
+  - yolov8n-200e-v0.2.pt → untuk deteksi api dan asap
+- Simpan file serviceAccountKey.json dari Firebase ke folder utama proyek (firebot/)
+
+### 4. ▶️ Jalankan Program
+```bash
+python navigate2depth.py
+
