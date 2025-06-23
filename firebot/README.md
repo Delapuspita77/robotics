@@ -62,7 +62,7 @@ cd robotics/firebot
 ### 2. 🐍 Siapkan Virtual Environment
 ```bash
 # Masuk ke folder python/
-cd python
+cd python ```bash
 
 # Buat dan aktifkan virtual environment
 python -m venv venv
