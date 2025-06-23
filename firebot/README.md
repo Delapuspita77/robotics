@@ -58,11 +58,12 @@ Berdasarkan hasil deteksi dan peta kedalaman, robot menentukan aksi berdasarkan 
 ```bash
 git clone https://github.com/Delapuspita77/robotics.git
 cd robotics/firebot
+```
 
 ### 2. 🐍 Siapkan Virtual Environment
 ```bash
 # Masuk ke folder python/
-cd python ```bash
+cd python
 
 # Buat dan aktifkan virtual environment
 python -m venv venv
@@ -74,6 +75,7 @@ source venv/bin/activate  # ← Linux/macOS
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
 ### 3. 💾 Siapkan Model dan Firebase
 - Letakkan file model berikut ke dalam folder checkpoints/:
@@ -84,4 +86,4 @@ pip install -r requirements.txt
 ### 4. ▶️ Jalankan Program
 ```bash
 python navigate2depth.py
-
+```
